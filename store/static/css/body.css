@@ -1,0 +1,142 @@
+.col-md-3 {
+    position: sticky;
+    top: 100px;
+    /* Adjust this value based on your navbar height */
+    height: calc(100vh - 80px);
+    /* Ensure it doesn't overflow */
+    overflow-y: auto;
+    /* Enable scrolling inside the filter section if needed */
+}
+
+/* Hide scrollbar for a cleaner look (Optional) */
+.col-md-3::-webkit-scrollbar {
+    width: 6px;
+}
+
+.col-md-3::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+/* Ensure the product section scrolls normally */
+.col-md-9 {
+    overflow-y: auto;
+}
+
+
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    /* Reduced space between blocks */
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    padding: 8px 18px;
+    /* Reduced padding */
+    font-size: 14px;
+    /* Reduced font size */
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid transparent;
+    /* Reduced border size */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    /* Initial shadow */
+    background-color: transparent;
+    color: black;
+}
+
+.btn-custom:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+}
+
+/* Border colors for buttons */
+.best-seller {
+    border-color: rgb(9, 8, 8);
+    background-color: rgb(207, 197, 197);
+}
+
+.muscle-up {
+    border-color: rgb(9, 8, 8);
+    background-color: rgb(223, 213, 213);
+}
+
+.instock {
+    border-color: rgb(136, 136, 38);
+    background-color: rgb(175, 175, 8);
+}
+
+.price {
+    display: inline-block;
+}
+
+
+
+
+/* images css of fat loss ect */
+
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.col-3 {
+    flex: 1;
+    /* max-width: 250px; */
+    /* Controls size */
+}
+
+.col-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.col-3 img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    /* Adds shadow */
+    
+}
+
+/* .card-img-top:hover {
+    transform: scale(1.1);
+   
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+   
+} */
+
+
+/* Fitness stack button css */
+
+.fitness-heading {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff5733, #ffbd69);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: fit-content; /* Prevents text from stretching full width */
+    /* padding: ; */
+    border: 3px solid #ff5733; /* Border added */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}

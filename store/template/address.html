@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+<style>
+
+
+
+    .col-md-6 {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow on inputs */
+    }
+
+    .btn {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Button shadow */
+    }
+
+
+
+
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: #b30900;
+    }
+
+    .summary {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    .summary p {
+        margin: 5px 0;
+    }
+
+    
+</style>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h1 style="text-align: center;"> </h1>
+
+        <div class="col-md-6  rounded mx-auto ">
+            {% if error_msg %}
+            <div class="alert alert-danger">
+                {{error_msg}}
+
+            </div>
+            {% endif %}
+            <!-- <a href="/back" type="submit" style="text-decoration: none; color: black;">⇐</a> -->
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="alert">
+                    <img src="{% static 'images/logo-MuscleUp.png' %} " alt="">
+
+                </div>
+                <div class="div bg-body-tertiary ">
+
+
+                    <!-- Shipping Details -->
+                    
+                    <div class="form-group ">
+                        
+                        <label for="full_name">Full Name</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">Zip Code</label>
+                        <input type="number" id="zipcode" name="zipcode" required>
+
+                    </div>
+                    <div class="form-group">
+
+                        <label for="mobile">Contact No.</label>
+                        <input type="number" id="mobile" name="mobile" required placeholder="@9309884563">
+
+                    </div>
+
+                    <a href="/placeorder"><button type="submit" class="btn btn-danger">Next</button></a>
+                    
+                    
+            </form>
+            
+            <button type="submit" class="btn btn-danger"><a href="/back" style="text-decoration: none; color:white ;">Go Back</a></button>
+            
+            
+
+        </div>
+        <!-- <a href="/back" type="submit" style="text-decoration: none; color: black; border: 1px solid;">Go Back</a> -->
+
+
+
+        
+
+
+        
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock main %}

@@ -1,0 +1,292 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+
+<style>
+    h2 {
+        color: #333;
+    }
+
+    table {
+        width: 80%;
+        /* margin: 20px auto; */
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background: #ff4081;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .meal {
+        background: #ddd;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    .meal h2 {
+        margin: 0;
+        color: #444;
+    }
+
+    .meal p {
+        margin: 5px 0 0;
+    }
+</style>
+
+<div class="container-fluid">
+
+    <div class="row  py-5">
+
+        <div class="col-8" style="text-align: justify;">
+
+            <h2><b>Fat Loss</b></h2>
+            <hr>
+
+
+            <h5>What do you understand by Fat Loss?</h5>
+
+            <p>Fat loss refers to the process by which the body reduces its stores of adipose tissue, commonly known as
+                body fat. This reduction typically occurs when the body expends more energy (calories) than it consumes,
+                resulting in a calorie deficit. The primary goal of fat loss is often to achieve a leaner body
+                composition, improve health markers associated with excess body fat, and enhance overall physical
+                appearance.
+
+                Fat loss occurs through a combination of factors, including dietary changes, increased physical
+                activity, and metabolic processes. When the body is in a calorie deficit, it starts to break down stored
+                fat into fatty acids and glycerol to be used as energy. This process is influenced by hormones such as
+                insulin, glucagon, cortisol, and leptin, which regulate energy balance and fat metabolism.
+
+                Fat loss is a gradual process that varies depending on individual factors such as genetics, age, sex,
+                and overall health. Sustainable fat loss involves adopting healthy lifestyle habits that promote
+                long-term weight management and overall well-being.</p>
+
+
+            <h5><b>Tips to Loose Fat Fast</b></h5>
+
+            <p>Losing fat fast is often a goal for many individuals looking to improve their health and appearance. Here
+                are ten tips to help achieve fat loss effectively:</p>
+
+
+            <p><b>Create a Calorie Deficit:</b>To lose fat, you need to consume fewer calories than you burn. Calculate
+                your daily caloric needs and aim for a moderate deficit (typically 500-1000 calories less than
+                maintenance) for steady, sustainable fat loss.
+
+            </p>
+            <p><b>Prioritize Protine:</b> Protein helps preserve lean muscle mass while promoting fat loss. Aim for a
+                protein-rich diet (about 1.2-2.2 grams per kilogram of body weight) to support satiety, metabolism, and
+                muscle recovery.</p>
+            <p><b>Focus on Whole Food:</b>Emphasize nutrient-dense, whole foods like fruits, vegetables, lean proteins,
+                whole grains, and healthy fats. These foods are typically lower in calories and higher in fibre, keeping
+                you fuller for longer.</p>
+            <p><b>Limit Processed Food and Sugar:</b> Cut back on processed foods, sugary snacks, and beverages as they
+                are often high in empty calories, added sugars, and unhealthy fats that contribute to weight gain.</p>
+            <p><b>Increase Physical Activities:</b> Incorporate both cardio (like running, cycling, or swimming) and
+                resistance training (such as weightlifting or bodyweight exercises) into your routine. Cardio burns
+                calories, while resistance training preserves muscle mass and boosts metabolism.</p>
+            <p><b>Stay Hydrated:</b>Drinking water helps regulate appetite, supports digestion, and can enhance fat
+                metabolism. Aim for at least 8 glasses (about 2 litres) of water per day, or more if you're physically
+                active.</p>
+
+
+            <p><b>Get Sufficient Sleep:</b>Lack of sleep disrupts hunger hormones (ghrelin and leptin), increasing
+                appetite and cravings for high-calorie foods. Aim for 7-9 hours of quality sleep each night to support
+                fat loss efforts.</p>
+            <p><b>Manage Stress:</b>Chronic stress triggers the release of cortisol, a hormone that promotes fat
+                storage, especially around the abdominal area. Practice stress-reducing techniques like meditation, deep
+                breathing, or yoga.</p>
+            <p><b>Track Your Progress:</b> Monitor your food intake, exercise routine, and body measurements to assess
+                progress and make necessary adjustments. Use tools like food journals or apps to stay accountable.</p>
+            <p><b>Be Patient and Consistent:</b>Sustainable fat loss takes time and effort. Set realistic goals, stay
+                consistent with your healthy habits, and celebrate small victories along the way. Avoid extreme diets or
+                quick-fix solutions that often lead to the regain of lost weight.</p>
+
+
+
+
+
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-3 mt-5">
+            <img src="{% static 'images/fitness-women-sports-diversity.jpg' %}" height="90%" width="100%" alt="">
+        </div>
+
+    </div>
+</div>
+<hr>
+
+
+<div class="container-fluid">
+    <div class="row  py-5">
+        <div class="col-8">
+
+            <h2><b>Workout Plan for Fat Loss(Biginners)</b></h2><br>
+
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Workout</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>30-minute Cardio + Full-body Strength Training</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>HIIT Workout (20 minutes) + Core Exercises</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>45-minute Brisk Walk + Bodyweight Strength Training</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Yoga & Flexibility Training</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Cardio Intervals + Lower Body Strength Training</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Outdoor Activity (Cycling, Hiking) + Core Workout</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Rest & Recovery (Stretching, Foam Rolling)</td>
+                </tr>
+            </table><br><br><br><br>
+
+
+            <h2><b>Workout Plan for Fat Loss(Intermidiate & Pro)</b></h2><br>
+
+
+
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Workout</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Strength + HIIT</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Upper Body + LISS)</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Yoga, Mobility Work, Optional Light Walk (30 min).</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Lower Body + HIIT</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Push-Pull Strength + LISS</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Full-Body Functional</td>
+
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Rest & Recovery (Stretching, Mobility Work)</td>
+                </tr>
+            </table><br><br>
+            <hr><br>
+
+
+
+            <h2><b>Diet Plan For Fat Loss </b></h2><br>
+
+            <div class="container">
+                <h1>Muscle Gain Diet Plan</h1>
+                <div class="meal">
+                    <h2>Breakfast</h2>
+                    <p>Oatmeal with banana, peanut butter</p>
+                </div>
+                <div class="meal">
+                    <h2>Mid-Morning Snack</h2>
+                    <p>Greek yogurt with honey s</p>
+                </div>
+                <div class="meal">
+                    <h2>Lunch</h2>
+                    <p>Grilled chicken breast and steamed broccoli</p>
+                </div>
+                <div class="meal">
+                    <h2>Afternoon Snack</h2>
+                    <p>Cottage cheese with berries and almonds</p>
+                </div>
+                <div class="meal">
+                    <h2>Dinner</h2>
+                    <p>one chapati with green vegies</p>
+                </div>
+                <div class="meal">
+                    <h2>Post-Workout Meal</h2>
+                    <p>Protein shake and banana</p>
+
+                </div>
+            </div>
+
+
+
+
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-2">
+            <a href="/" class="btn btn-danger">Go Back</a>
+        </div>
+    </div>
+</div>
+
+{% endblock main %}

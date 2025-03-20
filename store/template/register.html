@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block main %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-4 mt-4 mx-auto shadow-lg p-3 mb-5 bg-body-sbtl rounded" style="border: 1px solid red; height: 80%"">
+
+            <img src="{% static 'images/logo-MuscleUp.png' %} " alt="" height="20%" width="45%"  ><br><hr>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                {% if error_msg %}
+                <div class="alert alert-danger">
+                    {{error_msg}}
+
+                </div>
+                {% endif %}
+
+                <div class="mb-3">
+                    <label for="username" class="form-label"><b></b>Username:</label>
+                    <input type="text" class="form-control" name="uname" placeholder="Enter Username">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="uemail" placeholder="Enter Password">
+
+                </div>
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" name="upass">
+                </div>
+                <div class="mb-3">
+                    <label for="cPassword" class="form-label">Confirm Password:</label>
+                    <input type="password" class="form-control" placeholder="Re-Enter password" name="ucpass">
+                </div>
+
+                <button type="submit" class="btn btn-success">Register</button>
+                <button type="submit" class="btn btn-success"><a href="/login" style="text-decoration: none; color: white;"> Already Register ? </a></button>
+                
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock main %}

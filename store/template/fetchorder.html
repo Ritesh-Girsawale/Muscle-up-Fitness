@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+
+<style>
+    h3{
+        text-align: center;
+        color: seagreen;
+    }
+    
+    .fitness-heading {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    background: linear-gradient(90deg, #ff5733, #ffbd69);
+    
+    /* Apply background clip with proper vendor prefixes */
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    /* Ensure text remains transparent */
+    -webkit-text-fill-color: transparent;
+    
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    
+    width: fit-content;
+    
+    border: 3px solid #ff5733;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+
+    }
+
+    
+
+
+    /* Style for the Address Table */
+.address-table {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.address-table thead {
+    background-color: #343a40; /* Dark header */
+    color: white;
+}
+
+.address-table th, 
+.address-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+.address-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Payment Section */
+.shadow-lg {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    /* padding: 20px; */
+}
+
+.btn-success {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+</style>
+
+
+<div class="row m-3">
+    <div class="col-md-9 mx-auto">
+        <h1 class="fitness-heading">Delivery Address</h1>
+        <hr>
+
+        <table class="table table-bordered address-table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Pincode</th>
+                    <th>State</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in address %}
+                <tr>
+                    <td>{{ i.fullname }}</td>
+                    <td>{{ i.address }}</td>
+                    <td>{{ i.city }}</td>
+                    <td>{{ i.pincode }}</td>
+                    <td>{{ i.state }}</td>
+                    <td>{{ i.mobile }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="col-md-3"><br><br>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <p><b>Total items: {{items}}</b></p>
+            <p>Total Amount: <b>{{total}} Rs</b></p>
+            <a href="/makepayment">
+                <button id="rzp-button1" class="btn btn-success w-100">Make Payment</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock main %}
+
+
+
+
+<!-- <style>
+    h3 {
+        text-align: center;
+        color: seagreen;
+    }
+</style>
+
+<div class="row m-3">
+    <div class="col-md-9 mx-auto">
+       <h1>Delivery Address</h1><hr>
+
+     
+       <form method="POST" action="{% url 'placeorder' %}">
+           {% csrf_token %}
+
+           {% if addresses %}
+               {% for i in addresses %}
+               <div class="form-check">
+                   <input class="form-check-input" type="radio" name="selected_address" value="{{ i.id }}" required>
+                   <label class="form-check-label">
+                       <h4>{{ i.fullname }}</h4>
+                       <h4>{{ i.address }}, {{ i.city }}, {{ i.pincode }}, {{ i.state }}</h4>
+                       <h4>{{ i.mobile }}</h4>
+                   </label>
+               </div>
+               <hr>
+               {% endfor %}
+           {% else %}
+               <p>No saved addresses found.</p>
+           {% endif %}
+
+           <a href="/checkaddress/" class="btn btn-primary mt-3">Add New Address</a>
+           <button type="submit" class="btn btn-success mt-3">Proceed to Payment</button>
+       </form>
+    </div>
+
+    <div class="col-md-3">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <p><b>Total items: {{ items }}</b></p>
+            <p>Total Amt: <b>{{ total }} Rs</b></p>
+        </div>
+    </div>
+</div>
+
+ -->

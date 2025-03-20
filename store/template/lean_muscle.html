@@ -1,0 +1,275 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+<style>
+    h2 {
+        color: #333;
+    }
+
+    table {
+        width: 80%;
+        /* margin: 20px auto; */
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background: #ff4081;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .meal {
+        background: #ddd;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    .meal h2 {
+        margin: 0;
+        color: #444;
+    }
+
+    .meal p {
+        margin: 5px 0 0;
+    }
+</style>
+
+
+
+<div class="container-fluid">
+    <div class="row  py-5">
+        <div class="col-8" style="text-align: justify;">
+            <h2><b>Lean Muscle Mass</b></h2>
+            <hr>
+            <h5>What is Lean Muscle Mass?</h5>
+            <p>Lean muscle mass refers to the weight of the muscles in your body, excluding any fat. It plays a crucial
+                role in overall health and fitness. Lean muscle mass includes not only the muscles that help with
+                movement and lifting but also the muscles in your heart and other organs. Having a higher proportion of
+                lean muscle mass is beneficial for several reasons: it enhances strength and mobility, allowing for
+                easier execution of everyday tasks like carrying groceries or climbing stairs; it boosts metabolism, as
+                muscles burn more calories than fat even at rest, aiding in weight management; it supports better
+                overall health by reducing the risk of injuries and conditions like osteoporosis; and it improves energy
+                levels, helping you stay active and less fatigued
+                throughout the day. Increasing lean muscle mass involves a combination of strength training exercises,
+                such as lifting weights or doing push-ups, and proper nutrition, particularly adequate protein intake
+                from sources like meat, beans, and nuts, to support muscle growth and repair. In summary, lean muscle
+                mass is essential for physical strength, metabolic health, and overall well-being, and maintaining it
+                requires regular exercise and a balanced diet.</p>
+
+
+            <h5>Tips to Get Lean Muscle Mass</h5>
+            <p><b>Start with a Plan:</b> Create a workout plan that includes specific strength training exercises. This
+                could be lifting weights, using resistance bands, or bodyweight exercises like squats and push-ups.
+                Having a plan helps you stay focused and consistent.</p>
+
+            <p><b>Increase Weight Gradually:</b> To build muscle, you need to challenge your muscles. Start with weights
+                that are manageable and gradually increase them as you get stronger. This is called progressive
+                overload, and it’s key to muscle growth.</p>
+            <p><b>Eat Protein at every Meal:</b>Protein is crucial for muscle repair and growth. Try to include a good
+                source of protein, like chicken, fish, eggs, beans, or tofu, in every meal. This helps your muscles
+                recover and grow after workouts.</p>
+            <p><b>Dont't Skip Carbs</b>Carbohydrates are important for providing energy, especially before workouts.
+                Foods like rice, pasta, fruits, and vegetables can give you the energy you need to train hard and build
+                muscle.</p>
+            <p><b>Stay Consistent with workout:</b> Consistency is important for muscle growth. Stick to your workout
+                routine and try not to miss any sessions. Over time, this regular effort will lead to noticeable gains
+                in muscle mass.</p>
+            <p><b>Get Enough Rest:</b>Muscles need time to recover and grow. Make sure you get plenty of sleep each
+                night, and take rest days between intense workouts. This helps prevent injuries and supports muscle
+                repair.</p>
+            <p><b>Stay Hydrated:</b>Drinking plenty of water is essential for muscle function and recovery. Dehydration
+                can make your workouts harder and slow down muscle growth. Aim to drink water throughout the day,
+                especially before and after exercise.</p>
+            <p><b>Track Your Progress</b> Keep a journal or use an app to track your workouts, diet, and how your
+                muscles are changing. This helps you see what’s working and make adjustments to keep improving.</p>
+
+        </div>
+        
+        <div class="col-1">
+
+        </div>
+       
+        <div class="col-3 mt-5">
+            <img src="{% static 'images/wp11588679.webp' %}" height="90%" width="100%" alt="">
+        </div>
+
+
+    </div>
+</div>
+<hr>
+
+
+<div class="container-fluid">
+    <div class="row  py-5">
+        <div class="col-8">
+
+            <h2><b>Workout Plan for Lean Muscle(Biginners)</b></h2><br>
+
+
+
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Workout</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Full Body Strength Training (Squats, Push-ups, Rows)</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Cardio (Jogging, Cycling, Jump Rope - 30 mins)</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Upper Body (Bicep Curls, Shoulder Press, Planks)</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Lower Body (Lunges, Deadlifts, Calf Raises)</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Cardio & Core (Mountain Climbers, Sit-ups, Russian Twists)</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Yoga & Flexibility Training</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Rest & Recovery</td>
+                </tr>
+            </table><br><br><br><br>
+
+            <h2><b>Workout Plan for Fat Loss(Intermidiate & Pro)</b></h2><br>
+
+
+
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Workout</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Strength + HIIT</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Upper Body + LISS)</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Yoga, Mobility Work, Optional Light Walk (30 min).</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Lower Body + HIIT</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Push-Pull Strength + LISS</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Full-Body Functional</td>
+
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Rest & Recovery (Stretching, Mobility Work)</td>
+                </tr>
+            </table><br><br>
+            <hr><br>
+
+
+
+            <h2><b>Diet Plan For Fat Loss </b></h2><br>
+
+            <div class="container">
+                <h1>Lean Muscle Gain Diet Plan</h1>
+                <div class="meal">
+                    <h2>Breakfast</h2>
+                    <p>Scrambled egg whites with whole wheat toast and avocado</p>
+                </div>
+                <div class="meal">
+                    <h2>Mid-Morning Snack</h2>
+                    <p>Low-fat Greek yogurt with mixed nuts and berries</p>
+                </div>
+                <div class="meal">
+                    <h2>Lunch</h2>
+                    <p>Grilled salmon with quinoa and steamed asparagus</p>
+                </div>
+                <div class="meal">
+                    <h2>Afternoon Snack</h2>
+                    <p>Cottage cheese with flaxseeds and a handful of almonds</p>
+                </div>
+                <div class="meal">
+                    <h2>Dinner</h2>
+                    <p>Grilled chicken breast with roasted sweet potatoes and sautéed spinach</p>
+                </div>
+                <div class="meal">
+                    <h2>Post-Workout Meal</h2>
+                    <p>Whey protein shake with a banana and almond butter</p>
+                </div>
+            </div>
+
+            <div class="col-1">
+
+            </div>
+
+            <div class="col-3">
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-2">
+            <a href="/" class="btn btn-danger">Go Back</a>
+        </div>
+    </div>
+</div>
+
+{% endblock main %}

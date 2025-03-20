@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+<style>
+    .fitness-heading {
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: linear-gradient(90deg, #ff5733, #ffbd69);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        width: fit-content;
+        /* Prevents text from stretching full width */
+        
+        border: 3px solid #ff5733;
+        /* Border added */
+        border-radius: 10px;
+        /* Rounded edges */
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        /* Soft shadow */
+
+        
+}
+
+    
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-2">
+            <a href="/" class="btn btn-danger">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-1">
+
+        </div>
+        <div class="col-10">
+            <div class="container mt-4">
+
+                <h1 class="fitness-heading">My Orders</h1>
+
+            </div>
+            <hr>
+            {% if orders %}
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                            <th>Payment Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        <tr>
+                            <td>#{{ order.order_id }}</td>
+                            <td>{{ order.p_id.pname }}</td>
+                            <td>{{ order.qty }}</td>
+                            <td>₹{{ order.amt }}</td>
+                            <td>{{ order.payment_status|title }}</td>
+                            <td>
+                                {% if order.payment_status == "unpaid" %}
+                                <a href="{% url 'makepayment' %}" class="btn btn-primary btn-sm">Pay Now</a>
+                                {% else %}
+                                <span class="badge bg-success">Paid</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <p class="text-center">No orders found.</p>
+            {% endif %}
+        </div>
+
+
+
+    </div>
+
+    <div class="col-1">
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock main %}

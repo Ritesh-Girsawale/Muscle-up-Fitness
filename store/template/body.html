@@ -1,0 +1,837 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/body.css' %}">
+
+    <style>
+        
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class=" carousel-item active ">
+                        <img src=" {% static 'images/turn-power_69017c4e-2342-45a5-8e99-fcd3786532bf.png' %}"
+                            height="900px" class="d-block w-100" alt="...">
+
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/1633774.jpg' %}" height="900px" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/851863.jpg' %}" height="900px" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <hr><br><br>
+
+        <hr>
+
+        <a href="" style="text-decoration: none; color: black;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-1">
+                        <h6>Health Suppliments</h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>
+                            Sports & Nutrition
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>
+                            Health food and snacks
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>
+                            Skin care & hair Cleaner
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Weight Management
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Women Health
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Ayurvedic Suppliment
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Sexual Health
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Fitness Accesories
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Braces & Support
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Fitness Equipment
+
+                        </h6>
+                    </div>
+                    <div class="col-1">
+                        <h6>Health Checkup
+
+                        </h6>
+                    </div>
+
+
+                </div>
+            </div>
+        </a>
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row mx-1 py-5">
+                <div class="col-3">
+                    <a href="/build_muscle">
+                        <img src="{% static 'images/build_muscles_1.webp' %}" alt="Build Muscle">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="/fat_loss">
+                        <img src="{% static 'images/FAT_LOSS_3_1.webp' %}" alt="Fat Loss">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="/lean_muscle">
+                        <img src="{% static 'images/LEAN_MUSCLE_MASS_1.webp' %}" alt="Lean Muscle">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="/exercise">
+                        <img src="{% static 'images/IMPROVE_WORKOUT_1.webp' %}" alt="Improve Workout">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+<hr>
+
+
+
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fitness-heading">FITNESS STACK</h1>
+            </div>
+        </div><br><br><br>
+        
+
+
+        <div class="container-fluid">
+            <div class="row mx-1">
+                <!-- Sidebar Filters -->
+
+                <div class="col-md-3 mt-4 p-3 shadow-sm rounded" style="background-color: white;">
+                    <h4 class="text-center mb-3"><b>Filters</b></h4>
+
+                    <div class="accordion" id="filterAccordion">
+
+                        <!-- Category Filter -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#categoryFilter">
+                                    <b>Category</b>
+                                </button>
+                            </h2>
+                            <div id="categoryFilter" class="accordion-collapse collapse"
+                                data-bs-parent="#filterAccordion">
+                                <div class="accordion-body p-2">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="/" class="text-decoration-none">All</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="/filterbycategory/1"
+                                                class="text-decoration-none">Protein</a></li>
+                                        <li class="list-group-item"><a href="/filterbycategory/2"
+                                                class="text-decoration-none">Gainer</a></li>
+                                        <li class="list-group-item"><a href="/filterbycategory/3"
+                                                class="text-decoration-none">Creatine</a></li>
+                                        <li class="list-group-item"><a href="/filterbycategory/4"
+                                                class="text-decoration-none">BCAA</a></li>
+                                        <li class="list-group-item"><a href="/filterbycategory/5"
+                                                class="text-decoration-none">EAA</a></li>
+                                        <li class="list-group-item"><a href="/filterbycategory/6"
+                                                class="text-decoration-none">Fish Oil</a></li>
+                                        <li class="list-group-item"><a href="/filterbycategory/7"
+                                                class="text-decoration-none">Pre-Workout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discount Filter -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#discountFilter">
+                                    <b>Discount</b>
+                                </button>
+                            </h2>
+                            <div id="discountFilter" class="accordion-collapse collapse" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body p-2">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <a href="{% url 'product_list' %}?discount_range=10-20" class="text-decoration-none">10-20% OFF</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="{% url 'product_list' %}?discount_range=21-30" class="text-decoration-none">21-30% OFF</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="{% url 'product_list' %}?discount_range=31-45" class="text-decoration-none">31-45% OFF</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <!-- Rating Filter -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ratingFilter">
+                                    <b>Rating</b>
+
+                                </button>
+                            </h2>
+                            <div id="ratingFilter" class="accordion-collapse collapse"
+                                data-bs-parent="#filterAccordion">
+                                <div class="accordion-body p-2">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">1 Star</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">2 Stars</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">3 Stars</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">4 Stars</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">5 Stars</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand Filter -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#brandFilter">
+                                    <b>Brand</b>
+                                </button>
+                            </h2>
+                            <div id="brandFilter" class="accordion-collapse collapse" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body p-2">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="#"
+                                                class="text-decoration-none">Nutrabey</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">Astis</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">Health
+                                                Farm</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">Muscle
+                                                Science</a></li>
+                                        <li class="list-group-item"><a href="#"
+                                                class="text-decoration-none">Muscletech</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">Nak Pro</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#priceFilter">
+                                    <b>Price</b>
+                                </button>
+                            </h2>
+                            <div id="priceFilter" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <form method="GET" action="/filterbyprice/" id="priceFilterForm">
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control" name="min" placeholder="Min"
+                                                min="0">
+                                        </div>
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control" name="max" placeholder="Max"
+                                                min="0">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Apply</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><br> 
+
+                    <!-- <img src="{% static 'images/ed1cd350-d807-4324-8821-8e5da5d0d201.jpg' %}" height="400px" width="400px" alt=""> -->
+
+                </div> 
+
+
+
+
+
+                <!-- Products Section -->
+                <div class="col-md-9 mt-4  bg-light">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                        {% for product in products %}
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <img height="60%" src="{{ product.pimage.url }}"  class="card-img-top"
+                                    alt="{{ product.pname }}">
+                                <hr>
+                                <div class="card-body">
+                                    <div class="btn-container">
+                                        <p class="btn-custom best-seller">{{product.seller}}</p>
+                                        <p class="btn-custom muscle-up">MUSCLE_UP</p>
+                                        <p class="btn-custom instock">⇩{{ product.discount_percentage }}%</p>
+                                    </div>
+                                    <h5 class="card-title"><b>{{ product.pname }}</b></h5>
+                                    <p class="price"><b>₹{{ product.price }}</b></p>
+                                    <p class="price"><strike>₹{{ product.price1 }}</strike></p> <br>
+                                    <!-- {% if product.category == 1 %}
+                                <p class="card-text">Protein</p>
+                                {% elif product.category == 2 %}
+                                <p class="card-text">Gainer</p>
+                                {% elif product.category == 3 %}
+                                <p class="card-text">Creatine</p>
+                                {% elif product.category == 4 %}
+                                <p class="card-text">BCAA</p>
+                                {% elif product.category == 5 %}
+                                <p class="card-text">EAA</p>
+                                {% elif product.category == 6 %}
+                                <p class="card-text">Fish Oil</p>
+                                {% elif product.category == 7 %}
+                                <p class="card-text">Pre-Workout</p>
+                                {% elif product.category == 8 %}
+                                <p class="card-text">Peanut Butter</p>
+                                {% elif product.category == 9 %}
+                                <p class="card-text">Oats</p>
+                                {% elif product.category == 10 %}
+                                <p class="card-text">Muesli</p>
+                                {% endif %} -->
+                                    <a href="/product_details/{{ product.id }}/" class="btn btn-danger">View More</a>
+                                    <a href="/addtocart/{{ product.id }}"><button class="btn btn-danger ">Add to
+                                            Cart</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+
+        <hr>
+
+        <!-- <div class="row" style="text-align: center;">
+    <div class="col-12"><br>
+        <a href="/view1"><button type="button" class="btn btn-secondary btn-lg"
+                style="background-color: black; text-align: center;">VIEW
+                ALL</button></a>
+    </div>
+</div>  -->
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <img src="{% static 'images/2465431.jpg' %}" alt="">
+                </div>
+            </div>
+        </div><br>
+        <hr>
+        <hr><hr>
+
+
+      
+
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fitness-heading">MUSCLE-UP BEST SELLER</h1>
+            </div>
+        </div><br><br><br><br>
+        
+
+
+
+
+
+
+        <div class="container-fluid">
+            <div class="row mx-1 py-5">
+
+                <div class="col-6 " style="padding-top: 10%;">
+
+                    <h6> <span class="badge text-bg-secondary" style=" padding-left: 2%;">New Launch</span></h6>
+
+                    <h1 style="color: orange; padding-left: 2%;">
+
+                        Best Seller
+                    </h1><br>
+
+                    <h5>
+                        <ul>
+                            <li>
+                                Muscle Bio Whey is a premium protein supplement designed to support your <br>
+                                fitness goals with its high-quality, grass-fed whey formula. Each serving <br>
+                                provides 28g of pure protein, including 6.45g of BCAAs and 13.72g of EAAs,<br>
+                                essential for muscle growth and recovery. Each serving of Muscle Bio Whey <br>
+                                delivers 80% pure protein,with 28g of protein in every scoop. This high <br>
+                                protein content ensures that your body gets the necessary fuel for muscle <br>
+                                building, maintenance,and recovery, making it ideal for fitness enthusiasts.<br>
+                            </li><br>
+
+                        </ul>
+                    </h5><br>
+
+                    <button type="button" class="btn btn-secondary btn-lg"
+                        style="background-color: black; text-align: center;">Grab Now
+                    </button>
+                    
+                </div>
+
+
+
+
+
+                <div class="col-6  ">
+
+                    <div style="height: 60%; width: 60%;">
+
+                        <img src=" {% static 'images/bio_2k_22.webp' %}" alt="">
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <hr><hr>
+
+
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fitness-heading">GYM ACCESORIES</h1>
+            </div>
+        </div><br><br><br><br><br>
+        
+        
+
+        <div class="container-fluid">
+            <div class="row mx-1 py-5">
+
+
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/1.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5> class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/2.webp' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/9.webp' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/12.webp' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container-fluid">
+            <div class="row mx-1 py-5">
+
+
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/3.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/11.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/10.webp' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/4.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="row mx-1 py-5">
+
+
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/5.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/6.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/7.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'images/8.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <hr><hr>
+
+        <div class="container-fluid">
+
+            <div class="row  mx-1 py-5">
+
+
+                <div class="col-3">
+
+                </div>
+
+                <div class="col-9" style="text-align:justify;">
+
+                    <h3>Home Collections</h3><br>
+                    <p>
+                        Welcome to Muscle-Up Nutrition, your go-to destination for top-notch sports nutrition
+                        supplements. Our
+                        goal is to empower you on your fitness journey by equipping you with the right tools and support
+                        to
+                        achieve your goals. With our extensive range of products and dedication to excellence, we're
+                        committed
+                        to helping you unlock your full potential and attain the results you aspire to.
+
+                        At Muscle-Up Nutrition, we recognize that each person's fitness journey is unique. That's why we
+                        offer
+                        a diverse array of supplements tailored to address various needs and objectives. Whether you're
+                        an
+                        athlete seeking to optimize performance, a bodybuilder striving to increase muscle mass, or
+                        simply
+                        someone aiming for better health and wellness, we've got you covered.
+
+                        Our selection encompasses whey protein powders, pre-workout supplements, mass gainers, fat
+                        burners, and
+                        more – all meticulously crafted to deliver optimal outcomes. Whether your aim is to enhance
+                        muscle
+                        growth, boost endurance, elevate energy levels, or expedite recovery, our products are designed
+                        to help
+                        you achieve your goals efficiently and effectively.
+
+                        But Muscle-Up Nutrition is more than just a supplement provider – we're a community of
+                        like-minded
+                        individuals united by a shared passion for health and fitness. We believe in fostering a
+                        supportive and
+                        empowering environment where everyone can thrive on their fitness journey. That's why we offer
+                        resources, guidance, and motivation to help you succeed.
+
+                        Whether you're embarking on your fitness journey or you're a seasoned athlete, you'll find
+                        everything
+                        you need to support your goals at Muscle-Up Nutrition. Our team of experts is on hand to address
+                        your
+                        queries, offer advice, and provide personalized recommendations to help you maximize the
+                        benefits of
+                        your supplement regimen.
+
+                        Don't wait any longer – explore our collection today and experience the Muscle-Up Nutrition
+                        difference
+                        firsthand. With our premium-quality supplements and unwavering commitment to excellence, we're
+                        here to
+                        help you realize your aspirations and become the best version of yourself. Join the Muscle-Up
+                        Nutrition
+                        family today and take the first step toward a healthier, stronger, and happier you.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- hfarm best seller -->
+
+
+
+
+
+
+
+
+
+
+
+        {% endblock main %}
+
+
+
+</body>
+
+
+
+</html>

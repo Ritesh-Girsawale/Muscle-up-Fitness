@@ -1,0 +1,69 @@
+ /* Product Card Styling */
+ .cart-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cart-item .product-info {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-info h5 {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Quantity Controls */
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-box input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Cart Summary */
+.cart-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+.cart-summary button {
+    width: 100%;
+    margin-top: 10px;
+}
